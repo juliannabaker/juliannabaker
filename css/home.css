@@ -1,0 +1,306 @@
+/*Change the Theme based on the website
+  Just change out the variables in the "--main-hue"
+  "--secondary-hue" and "--text-hue" to whatever color
+  theme suits the website*/
+:root{
+  /*theme 1*/
+  --th1Blue: #3b6978;
+  --th1Cream: #e7dfd5;
+  --th1White: #ffffff;
+  --th1DarkBlue: #204051;
+  /*theme 2*/
+  --th2Blue: #1b6ca8;
+  --th2GreenBlue: #0a97b0;
+  --th2Pink: #ffd3e1;
+  --th2Baige: #fce8d5;
+  /*theme 3 ROCHESTAIR*/
+  --th3Blue: rgb(37, 37, 42);
+  --th3Red: rgb(128,27,29);
+  /*theme 4 DEFAULT*/
+  --th4Grey: #222831;
+  --th4DarkBlue: #30475e;
+  --th4Baige: #c1a57b;
+  /** MAIN SECOND THIRD TEXT COLORS**/
+  --main-hue : var(--th3Blue);
+  --second-hue: var(--th4Baige);
+  --third-hue: var(--th4Grey);
+  --text-hue: var(--th1White);
+}
+
+body {
+  padding-top: 60px;
+  background: var(--main-hue) !important;
+}
+
+footer{
+  /*CHANGED WITH VARIABLE TO SUIT THEME*/
+  background-color: var(--main-hue);
+}
+
+nav {
+  /*CHANGED WITH VARIABLE TO SUIT THEME*/
+  background-color: var(--main-hue);
+  box-shadow: 0px 0px 5px #16161a;
+}
+
+.nav-item{
+  margin-left: 1em !important;
+  margin-right: 1em !important;
+}
+
+.button {
+  background-color: #AC72EE;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: initial;
+  margin-top: 2em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logo{
+  width: 2em !important;
+  margin-left: 0.5em;
+  text-decoration: none !important;
+}
+
+.firstButton{
+  background-color: var(--main-hue);
+  color: white;
+  border: 2px solid #AC72EE;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.firstButton:hover{
+  background-color: #AC72EE;
+  color: var(--main-hue);
+  border-radius: 5px;
+}
+
+.secondButton{
+  background-color: var(--main-hue);
+  color: white;
+  border: 2px solid #AC72EE;
+  border-radius: 5px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.secondButton:hover{
+  background-color: #AC72EE;
+  color: var(--main-hue);
+  border-radius: 5px;
+}
+
+.purpleButton{
+  background-color: var(--main-hue);
+  color: white;
+  border: 2px solid #AC72EE;
+  border-radius: 5px;
+}
+
+.purpleButton:hover{
+  background-color: #AC72EE;
+  color: var(--main-hue);
+  border-radius: 5px;
+}
+
+.headlineName {
+  color: white !important;
+}
+
+.projectTitle{
+  margin-top: 5em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  background-color: #AC72EE !important;
+  /*outline: none !important;*/
+  outline-width: 5px !important;
+  margin-top: 3em;
+  text-decoration: none;
+  outline-color: #AC72EE !important;
+}
+
+.btn-primary{
+  background-color: #AC72EE !important;
+  /*outline: none !important;*/
+  outline-width: 5px !important;
+  margin-top: 3em;
+  text-decoration: none;
+  outline-color: #AC72EE !important;
+}
+
+.active{
+  border-bottom: 2px solid #AC72EE;
+  padding: 0px;
+}
+
+.jumbotron{
+  background-color: var(--main-hue) !important;
+  filter: drop-shadow(0px 0px 2px #16161a)  !important;
+  outline: solid;
+  outline-color: #AC72EE;
+  outline-width: 1px;
+}
+
+.contentBody{
+  margin-top: 1em;
+  color: white;
+  width: 61%;
+}
+
+.contentContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.screen{
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer{
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.image{
+  width: 12em;
+}
+
+.ISMImage{
+  width: 36em;
+}
+
+.myImage{
+  width: 20em;
+  border-radius: 5px;
+}
+
+.imageProto{
+  width: 36em;
+ }
+
+.my-4{
+  background-color: #AC72EE !important;
+}
+
+.display-4 {
+  color: white !important;
+}
+
+iframe {
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.stickers {
+  text-align: center;
+  margin: 5em;
+}
+
+.paragraphContainer {
+  text-align: center;
+}
+
+.paragraph {
+  color: black;
+  font-size: 1.25em;
+  margin: 1em;
+  width: 40em;
+  display: inline-block;
+}
+
+.largerText {
+  color: black;
+  font-weight: lighter;
+  font-size: 2.5em;
+  margin: 1em;
+  width: 30em;
+  display: inline-block;
+}
+
+.logo {
+  margin-right: 1em;
+  width: 50px;
+}
+
+.card {
+  background-color: var(--main-hue)
+}
+
+.pageHeaderBox {
+  justify-content: center;
+  height: 11em;
+  /*CHANGE TO SUIT THEME*/
+  background-color: var(--third-hue);
+  color: var(--text-hue)
+}
+
+.pageHeader {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.textBlurb {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+.purple-text{
+  color: #AC72EE;
+}
+
+/* Gallery */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 790px) {
+  .screen{
+    display: inline;
+    justify-content: center;
+  }
+  .imageProto{
+    display: none;
+  }
+  .ISMImage{
+    width: 20em;
+  }
+  .button {
+    font-size: 12px;
+    padding: 10px 24px;
+  }
+}
