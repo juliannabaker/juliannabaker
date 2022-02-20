@@ -12,13 +12,13 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- My JS -->
-  <script src="js/myJavaScript.js"></script>
+
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <title>Julianna Baker</title>
+
 
 </head>
 
@@ -27,16 +27,15 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Julianna Baker</a>
+    <a class="navbar-brand yeet" href="#" data-toggle="tooltip" data-placement="left" title="" data-original-title="Hi! This is a tooltip. You can find them hidden throughout my website to show why I made certain design decisions when developing my portfolio.">Julianna Baker <span class="hoverOverMe">Hover Over Me!</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" data-html="true" title="I used a line underneath the section that the user is on to indicate where they are in the system. This is more accessible to users since it is another indication, that is not using just color, to show where the user is and where they can go.">
           <a class="nav-link" href="index.html">Work</a>
-            <span class="sr-only">(current)</span>
-          </a>
+            <span class="sr-only" >(current)</span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
@@ -56,9 +55,12 @@
   <div class="row align-items-center my-5">
     <!-- /.col-lg-8 -->
     <div class="col-lg-9">
-      <h1 class="headlineName font-weight-light"><span class="purple-text">Julianna Baker</span> is a Product Designer concentrated on making designs that are accessible, creative, and aesthetic.</h1>
+      <h1 class="headlineName font-weight-light"><span class="purple-text">Julianna Baker</span> is a <span id="job-title">Product Designer</span> concentrated on making designs that are accessible, creative, and aesthetic.</h1>
       <h2></h2>
       <button class="button firstButton" onclick="window.location.href='contact.html';">Contact Me</button>
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
       <a href="https://www.linkedin.com/in/julianna-baker/">
         <img class="logo" src="img/linkedin.svg" alt="LinkedIn Icon">
       </a>
@@ -75,13 +77,13 @@
 
   <!-- Content-->
   <div class="jumbotron">
-    <h4 class="headlineName font-weight-light"><span class="purple-text">Project 1</span></h4>
+    <h4 class="headlineName font-weight-light"><span class="purple-text" data-toggle="tooltip" data-placement="left" data-html="true" title="I used this purple color with a hex of #AC72EE against a background grey color with a hex value of #25252A. I chose purple since it was a beautiful fun color that had a high enough contrast ratio, 4.64, that makes it an accessible color scheme.">Project 1</span></h4>
     <hr class="my-4">
     <div class="projectTitle">
       <h1 class="headlineName font-weight-light">News Application</h1>
     </div>
     <div class="contentContainer">
-      <p class="contentBody">
+      <p class="contentBody" data-toggle="tooltip" data-placement="right" title="Usability studies show that left aligning text is easier to read, when there are larger quantities of text, than center alignment.">
         As a developer for a Cyber Security Bootcamp, I headed the development of a mobile application to display news articles. I first used Figma to create high fidelity mockups then developed the application using React Native.
       </p>
     </div>
@@ -98,7 +100,7 @@
     </div>
     <div class="contentContainer">
       <p class="contentBody">
-        After analyzing the results of a user surveys, I identified a problem that students were not reading the content we were giving them. I took initiative to create simple and clean mockups for an application to replace the current delivery method. I used this and an MVP I coded in React Native to pitch the idea to the program directors. The project was green lit.
+        After analyzing the results of user surveys, I identified a problem that students were not reading the content we were giving them. I took initiative to create simple and clean mockups for an application to replace the current delivery method. I used this and an MVP I coded in React Native to pitch the idea to the program directors. The project was green lit.
       </p>
     </div>
     <div class="screen">
@@ -128,7 +130,7 @@
         <img class="image" src="img/BeMyVoiceSignUp.png" alt="App screen sign up form with text fields for name, email, and password. Back button is shown next to continue button.">
       </div>
       <div class="imageContainer">
-        <img class="image" src="img/BeMyVoiceHome.png" alt="App screen home page for be my voice is shown welcoming the user and asking for what service they would like to use, message interpreter, meet-up with interpreter, or video call interpreter buttons. Navigation bar shows user icon, home icon, and help icon.">
+        <img class="image" src="img/BeMyVoiceHome.png" alt="App screen home page for be my voice is shown welcoming the user and asking for what service they would like to use, message interpreter, meet-up with interpreter, or video call interpreter buttons. Navigation bar shows user icon, home icon, and help icon." data-html="true" data-toggle="tooltip" data-placement="right" title="Always add descriptive alt tags on images in code, for screen readers to explain what the image is showing to blind or visually impaired individuals.">
       </div>
     </div>
     <div class="contentContainer">
@@ -175,10 +177,10 @@
     </div>
     <div class="contentContainer">
       <p class="contentBody">
-        Throughout this project I used a design process shown in my presentation (Click “Learn More” to find these slides). After product research, user research, understanding the problem, and competitive analysis I came to my ideation phase of the design process where I used a sticky note method to organize ideas and I also used an infromation architecture diagram I quickly drew up so that I was able to figure out a better order of information. After I was able to understand who the target user was and figure out a heuristic evaluation of the current website I was able to chang the order of information to better suit the user.       </p>
+        Throughout this project I used a design process shown in my presentation (Click “Learn More” to find these slides). After product research, user research, understanding the problem, and competitive analysis I came to my ideation phase of the design process where I used a sticky note method to organize ideas and I also used an information architecture diagram I quickly drew up so that I was able to figure out a better order of information. After I was able to understand who the target user was and figure out a heuristic evaluation of the current website I was able to change the order of information to better suit the user.       </p>
     </div>
     <div class="contentContainer">
-      <button class="button purpleButton" onclick="window.location.href='https://docs.google.com/presentation/d/1AOtQVQEC37OoLuGmS0-ewt4zDm4vqRrnn4TnspgxP1E/edit';">Learn More</button>
+      <button class="button purpleButton" onclick="window.location.href='https://docs.google.com/presentation/d/1AOtQVQEC37OoLuGmS0-ewt4zDm4vqRrnn4TnspgxP1E/edit';" data-toggle="tooltip" data-placement="right" title="I created a fill affect and changed the cursor to indicate to the user that this is a button and it can be clicked on." data-html="true">Learn More</button>
     </div>
   </div> <!-- END OF PROJECT 3 -->
 
@@ -186,7 +188,7 @@
   <div class="row align-items-center my-5">
     <!-- /.col-lg-8 -->
     <div class="col-lg-9">
-      <h1 class="headlineName font-weight-light">You've made it this far, I think we should be </br> in touch.</h1>
+      <h1 class="headlineName font-weight-light">You've made it this far, I think we should be in touch.</h1>
       <h2></h2>
       <button class="button purpleButton" onclick="window.location.href='contact.html';">Contact Me</button>
     </div>
@@ -200,7 +202,7 @@
 <!-- Footer -->
 <footer class="py-5">
   <div class="container">
-    <p class="m-0 text-left text-white"><span class="purple-text">Designed & Developed By Me</span></p>
+    <p class="m-0 text-left text-white"><span class="purple-text" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-trigger="manual">Designed & Developed By Me</span></p>
   <!-- /.container -->
 </footer>
 
@@ -214,6 +216,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+<!-- My JS -->
+<script src="js/index.js"></script>
 
 </body>
 

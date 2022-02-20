@@ -37,6 +37,8 @@ footer{
   background-color: var(--main-hue);
 }
 
+.yeet + .tooltip > .tooltip-inner {background-color: #f00;}
+
 nav {
   /*CHANGED WITH VARIABLE TO SUIT THEME*/
   background-color: var(--main-hue);
@@ -46,6 +48,10 @@ nav {
 .nav-item{
   margin-left: 1em !important;
   margin-right: 1em !important;
+}
+
+#job-title {
+  color: #AC72EE;
 }
 
 .button {
@@ -64,10 +70,25 @@ nav {
   border-radius: 5px;
 }
 
+/*Tooltip Styling*/
+
+.introTooltip{
+  background-color: var(--main-hue);
+  color: white;
+}
+
+/*End of Tooltip styles*/
+
 .logo{
   width: 2em !important;
   margin-left: 0.5em;
   text-decoration: none !important;
+}
+
+.hoverOverMe{
+  font-size: small;
+  font-style: italic;
+  padding-left: 1em;
 }
 
 .firstButton{
@@ -303,4 +324,10 @@ div.desc {
     font-size: 12px;
     padding: 10px 24px;
   }
+  .hoverOverMe{
+    display: none;
+  }
 }
+
+
+
