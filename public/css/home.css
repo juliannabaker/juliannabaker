@@ -210,6 +210,10 @@ nav {
   width: 36em;
 }
 
+.PixoImage{
+  width: 64em;
+}
+
 .myImage{
   width: 20em;
   border-radius: 5px;
@@ -325,6 +329,9 @@ div.desc {
   .ISMImage{
     width: 20em;
   }
+  .PixoImage{
+    display: none;
+  }
   .button {
     font-size: 12px;
     padding: 10px 24px;
@@ -333,6 +340,19 @@ div.desc {
     display: none;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .PixoImage{
+    width: 30em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .PixoImage{
+    width: 34em;
+  }
+}
+
 
 
 
