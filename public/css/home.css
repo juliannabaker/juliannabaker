@@ -296,6 +296,50 @@ iframe {
   color: #AC72EE;
 }
 
+h4 {
+  text-transform: uppercase !important;
+  font-size: 1.25em !important;
+}
+
+.blogImage {
+  height: 20em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogBodyImage {
+  height: 40em;
+  width: 50%;
+  object-fit: cover;
+}
+
+.blogPostImageContainer {
+  display: flex;
+}
+
+.blogTitle {
+  margin-top: .5em;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+.blogPostImage {
+  margin-top: 5em;
+}
+
+.blogPostContainer {
+  margin-bottom: 5em;
+}
+
+.blogPostName {
+  margin-top: 1em;
+}
+
+.blogBody {
+  margin-top: 1em;
+  color: white;
+}
+
 /* Gallery */
 div.gallery {
   margin: 5px;

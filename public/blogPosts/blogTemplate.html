@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <!--My CSS -->
-  <link href="css/home.css" rel="stylesheet">
+  <link href="../css/home.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -15,9 +15,9 @@
   <!-- My JS -->
   <script src="js/myJavaScript.js"></script>
   <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
   <title>Julianna Baker</title>
 
 </head>
@@ -34,17 +34,17 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Work</a>
+          <a class="nav-link" href="../index.html">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="../about.html">About</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="../blog.html">Blog</a>
           <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -58,22 +58,37 @@
   <div class="row align-items-center my-5">
     <!-- /.col-lg-8 -->
     <div class="col-lg-9">
-      <h1 class="headlineName font-weight-light">Hi! I am looking forward to hearing from you! Please fill out the contact form below and I will get back to you as soon as I can.</h1>
+      <h1 class="headlineName font-weight-light"><span class="purple-text">Title here </span></h1>
+      <br>
+      <h4 class="headlineName font-weight-light"><span class="purple-text">June 22, 2022</span></h4>
     </div>
     <!-- /.col-md-4 -->
   </div>
   <!-- /.row -->
 
   <!-- Content-->
-    <div class="contentContainer">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyw-sczVJ44ozg3sgslDLYuKsCVh14ks3dfFVWEcK9YL0_gQ/viewform?embedded=true" width="700" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <hr class="my-4">
+  <div class="blogPostImage">
+    <div class="blogImageContainer">
+      <img class="blogImage" src="../img/Page68.jpg" alt="Page 68 of Solving Product Design Exercises by Artiom Dashinsky">
     </div>
+  </div>
+  <div class="blogPostContainer">
+    <h1 class="blogPostName headlineName font-weight-light"><span class="purple-text">Overview</span></h1>
+    <p class="blogBody">
+      I decided to purchase Dashinsky’s book off of amazon called “Solving Product Design Exercises” and I have a few opinions about it. Firstly I would like to say that this book gives a lot of great advice. I give Dashinsky a lot of credit when it comes to walking a new product designer through what an interview question might be like and how to solve problems that are thrown at you in an interview. That being said...
+    </p>
+  </div>
+  <!-- END OF POST -->
 
   <!-- Heading Row -->
+  <hr class="my-4">
   <div class="row align-items-center my-5">
     <!-- /.col-lg-8 -->
     <div class="col-lg-9">
-      <h1 class="headlineName font-weight-light">Thank you!</h1>
+      <h1 class="headlineName font-weight-light">Done reading? Go back to blog posts</h1>
+      <h2></h2>
+      <button class="button purpleButton" onclick="window.location.href='../blog.html';">Blog Posts</button>
     </div>
     <!-- /.col-md-4 -->
   </div>
@@ -87,7 +102,6 @@
   <div class="container">
     <p class="m-0 text-left text-white"><span class="purple-text">Designed & Developed By Me</span></p>
     <!-- /.container -->
-  </div>
 </footer>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
