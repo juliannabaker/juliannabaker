@@ -362,6 +362,37 @@ div.desc {
   text-align: center;
 }
 
+.appStore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.mpscreen {
+    display: flex;
+    justify-content: center;
+}
+
+.appStoreScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.appStoreSpacing {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  .mpscreen {
+    display: inline;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .screen{
     display: inline;
